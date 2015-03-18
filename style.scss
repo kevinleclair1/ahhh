@@ -1,0 +1,40 @@
+@import '_grid';
+@import '_setup';
+@import '_juice';
+
+body {
+	background: white;
+}
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  	margin: 0px 10px 10px 0px;
+  	float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 50px;
+	color: #FFF;
+	text-decoration: none;	
+}
+
+
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
+	@include centerer
+}
+
+.action-button:active
+{
+	border-bottom: 1px solid;
+}
