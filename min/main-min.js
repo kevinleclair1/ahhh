@@ -1,1 +1,1 @@
-$(function(){$("a").on("click",function(){$("audio")[0].play()})});
+$(function(){$("a").on("click",function(n){n.preventDefault(),$("audio")[0].play()})});
